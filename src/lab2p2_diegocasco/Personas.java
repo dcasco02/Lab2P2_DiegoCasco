@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class Personas {
     private String nombre;
-    private ArrayList <String>Jugadas=new ArrayList();
+    private ArrayList <String> Jugadas=new ArrayList();
     private int wins;
 
     public Personas() {

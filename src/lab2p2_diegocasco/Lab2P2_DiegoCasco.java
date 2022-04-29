@@ -25,7 +25,6 @@ public class Lab2P2_DiegoCasco {
     public static void main(String[] args) {
         Personas per = new Personas();
         ArrayList jugadores = new ArrayList();
-        ArrayList<String> numrandom = new ArrayList();
         int opcion = 60;
         while (opcion != 0) {
             opcion = Integer.parseInt(
@@ -50,16 +49,24 @@ public class Lab2P2_DiegoCasco {
                 }
             }
             if (opcion == 3) {
-                imprimirrecursivo(jugadores, opcion);
+                imprimirrecursivo(jugadores, 0);
             }
             if (opcion == 4) {
-                int turnos = 0;
-                for (int i = 0; i < 4; i++) {
-                    numrandom.add(String.valueOf(0 + r.nextInt(7)));
-                }
-                while (turnos != 8) {
-                    for (Object j : jugadores ) {
-                        
+                if (jugadores.size() == 0) {
+                    System.out.println("No hay Jugadores");
+                } else {
+                    int turnos = 0;
+                    ArrayList<String> numrandom = new ArrayList();
+                    for (int i = 0; i < 4; i++) {
+                        numrandom.add(String.valueOf(0 + r.nextInt(7)));
+                    }
+                    while(turnos!=8){
+                        for(int i=0;i<jugadores.size();i++){
+                            System.out.println(jugadores.get(i));
+                            for(int j=0;j<=numrandom.size();i++){
+                                
+                            }                                
+                        }
                     }
                 }
             }
