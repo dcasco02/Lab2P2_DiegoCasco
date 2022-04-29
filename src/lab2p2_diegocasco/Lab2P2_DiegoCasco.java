@@ -48,16 +48,24 @@ public class Lab2P2_DiegoCasco {
                     System.out.println(jugadores.get(p));
                 }
             }if(opcion==3){
-                
+                imprimirrecursivo(jugadores, opcion);
             }if(opcion==4){
+                int turnos=0;
                 for(int i=0;i<4;i++){
-                    numrandom.add(String.valueOf(0+r.nextInt(7)));
+                    numrandom.add(String.valueOf(0+r.nextInt(7))); 
+                }
+                while(turnos!=8){
                     
                 }
-                System.out.println(numrandom);
-                
             }
         }
+    }
+      public static void imprimirrecursivo (ArrayList jugadores, int i) {
+        if (i == jugadores.size()-1) { System.out.println (jugadores.get(i)); }
+        else {
+            System.out.println(jugadores.get(i));
+            imprimirrecursivo(jugadores,i+1);
+        }       
     }
     
 }
