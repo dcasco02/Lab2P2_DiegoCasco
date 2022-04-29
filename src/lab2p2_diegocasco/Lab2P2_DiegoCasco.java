@@ -22,6 +22,7 @@ public class Lab2P2_DiegoCasco {
      */
     public static void main(String[] args) {
         ArrayList<String> jugadores = new ArrayList();
+        ArrayList<String> Jugadas = new ArrayList();
         int opcion = 60;
         while (opcion != 0) {
             opcion = Integer.parseInt(
@@ -40,6 +41,10 @@ public class Lab2P2_DiegoCasco {
                 for (String j : jugadores) {
                     System.out.println(j);
                 }
+            }if(opcion==3){
+                
+            }if(opcion==4){
+                
             }
         }
     }
