@@ -41,14 +41,20 @@ public class Lab2P2_DiegoCasco {
             }
             if (opcion == 2) {
                 System.out.println("Ingrese la posicion que desea ver: ");
-                int p=lea.nextInt();
-                System.out.println(jugadores.get(p));
+                int p = lea.nextInt();
+                if (jugadores.size() == 0) {
+                    System.out.println("No hay Jugadores");
+                } else {
+                    System.out.println(jugadores.get(p));
+                }
             }if(opcion==3){
                 
             }if(opcion==4){
-                for(int i=0;i<=4;i++){
+                for(int i=0;i<4;i++){
+                    numrandom.add(String.valueOf(0+r.nextInt(7)));
                     
                 }
+                System.out.println(numrandom);
                 
             }
         }
