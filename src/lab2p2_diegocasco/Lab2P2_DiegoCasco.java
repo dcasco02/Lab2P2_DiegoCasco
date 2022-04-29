@@ -40,11 +40,11 @@ public class Lab2P2_DiegoCasco {
                 jugadores.add(new Personas(n,0));
             }
             if (opcion == 2) {
-                System.out.println("Ingrese la posicion que desea ver: ");
-                int p = lea.nextInt();
                 if (jugadores.size() == 0) {
                     System.out.println("No hay Jugadores");
-                } else {
+                }else{
+                    System.out.println("Ingrese la posicion que desea ver: ");
+                    int p = lea.nextInt(); 
                     System.out.println(jugadores.get(p));
                 }
             }if(opcion==3){
