@@ -22,8 +22,8 @@ public class Lab2P2_DiegoCasco {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ArrayList<String> jugadores = new ArrayList();
-        ArrayList<String> Jugadas = new ArrayList();
+        Personas per =new Personas();
+        ArrayList jugadores = new ArrayList();
         ArrayList<String> numrandom = new ArrayList();
         int opcion = 60;
         while (opcion != 0) {
@@ -37,7 +37,7 @@ public class Lab2P2_DiegoCasco {
             if (opcion == 1) {
                 System.out.println("Ingrese el nombre del jugador: ");
                 String n = lea.nextLine();
-                jugadores.add(n);
+                jugadores.add(new Personas(n,0));
             }
             if (opcion == 2) {
                 System.out.println("Ingrese la posicion que desea ver: ");
